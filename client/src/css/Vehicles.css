@@ -1,0 +1,8 @@
+.veh-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(270px, 1fr)); gap: var(--s-4); }
+.veh-card { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--s-5); display: grid; gap: var(--s-4); justify-items: start; transition: box-shadow 0.2s; }
+.veh-card:hover { box-shadow: var(--shadow-md); }
+.veh-top { display: flex; justify-content: space-between; align-items: center; width: 100%; }
+.veh-icon { width: 44px; height: 44px; border-radius: 12px; background: var(--paper); display: grid; place-items: center; color: var(--ink-700); }
+.veh-info { display: grid; gap: 2px; }
+.veh-info span { font-size: var(--fs-sm); }
+.veh-actions { display: flex; gap: var(--s-2); margin-top: auto; }

@@ -1,0 +1,23 @@
+.parking-controls { display: flex; align-items: flex-end; justify-content: space-between; gap: var(--s-5); flex-wrap: wrap; margin-bottom: var(--s-4); }
+.parking-vehicle { min-width: 260px; flex: 1 1 280px; max-width: 420px; }
+.floor-tabs { display: flex; gap: var(--s-3); overflow-x: auto; padding: 2px 2px 10px; margin-bottom: var(--s-2); scrollbar-width: thin; }
+.floor-tab { flex: 1 1 150px; min-width: 150px; text-align: left; background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-md); padding: 12px 14px; display: grid; gap: 2px; color: var(--text); transition: border-color 0.15s, box-shadow 0.15s; }
+.floor-tab strong { font-family: var(--font-display); font-size: var(--fs-xl); line-height: 1; }
+.floor-tab span { font-size: var(--fs-sm); color: var(--muted); }
+.floor-tab em { font-style: normal; font-size: var(--fs-xs); font-weight: 700; }
+.floor-tab em.ok { color: var(--slot-available); }
+.floor-tab em.none { color: var(--slot-occupied); }
+.floor-tab:hover { border-color: var(--ink-300); }
+.floor-tab.active { background: var(--ink-900); border-color: var(--ink-900); color: #fff; box-shadow: var(--shadow-md); }
+.floor-tab.active span { color: var(--ink-200); }
+.floor-tab.active em.ok { color: var(--teal-400); }
+.slots-card { padding: var(--s-5); }
+.slots-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-4); flex-wrap: wrap; margin-bottom: var(--s-5); }
+.slots-count b { color: var(--text); }
+.zone-pills { display: flex; flex-wrap: wrap; gap: var(--s-2); }
+.pill { border: 1px solid var(--line-strong); background: var(--surface); color: var(--text-2); border-radius: var(--r-pill); padding: 7px 14px; font-size: var(--fs-sm); font-weight: 600; }
+.pill small { opacity: 0.7; font-weight: 500; margin-left: 4px; }
+.pill:hover { border-color: var(--ink-600); }
+.pill.active { background: var(--teal-50); border-color: var(--teal-500); color: var(--teal-700); }
+.zone-groups { display: grid; gap: var(--s-6); }
+.zone-title { font-size: var(--fs-md); color: var(--text-2); margin-bottom: var(--s-3); }

@@ -1,0 +1,10 @@
+.bill-wrap { display: grid; grid-template-columns: minmax(0, 1.4fr) minmax(0, 1fr); gap: var(--s-5); align-items: start; max-width: 1000px; }
+.bill-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); flex-wrap: wrap; padding-bottom: var(--s-4); border-bottom: 2px solid var(--ink-900); margin-bottom: var(--s-2); }
+.bill-kicker { display: block; color: var(--muted); font-size: var(--fs-xs); }
+.bill-head strong { font-family: var(--font-display); font-size: var(--fs-lg); }
+.bill-total { display: flex; justify-content: space-between; align-items: center; background: var(--teal-50); border: 1px solid var(--teal-100); border-radius: var(--r-md); padding: var(--s-4) var(--s-5); margin-top: var(--s-4); }
+.bill-total span { font-weight: 600; }
+.bill-total strong { font-family: var(--font-display); font-size: var(--fs-2xl); color: var(--teal-700); }
+.bill-note { color: var(--muted); font-size: var(--fs-xs); margin-top: var(--s-3); }
+.bill-cta { display: grid; gap: var(--s-4); }
+@media (max-width: 860px) { .bill-wrap { grid-template-columns: 1fr; } }

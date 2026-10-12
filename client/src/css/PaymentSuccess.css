@@ -1,0 +1,21 @@
+.success { display: grid; grid-template-columns: minmax(0, 1.1fr) minmax(0, 1fr); gap: var(--s-5); align-items: start; max-width: 1080px; }
+.success-hero { display: grid; gap: var(--s-4); justify-items: center; text-align: center; padding: var(--s-7) var(--s-5); }
+.check { width: 84px; height: 84px; }
+.check-circle { stroke: var(--teal-500); stroke-width: 3; stroke-dasharray: 151; stroke-dashoffset: 151; animation: draw 0.6s var(--ease) forwards; }
+.check-mark { stroke: var(--teal-500); stroke-width: 4; stroke-linecap: round; stroke-linejoin: round; stroke-dasharray: 40; stroke-dashoffset: 40; animation: draw 0.4s 0.5s var(--ease) forwards; }
+@keyframes draw { to { stroke-dashoffset: 0; } }
+.success-hero h1 { font-size: var(--fs-2xl); }
+.success-amount { font-family: var(--font-display); font-size: clamp(36px, 8vw, 52px); font-weight: 700; letter-spacing: -0.03em; }
+.success-msg { max-width: 460px; color: var(--text-2); }
+.success-actions { display: flex; flex-wrap: wrap; gap: var(--s-3); justify-content: center; margin-top: var(--s-2); }
+.release { display: flex; align-items: center; gap: 14px; text-align: left; background: var(--slot-release-bg); border: 1px solid #fbd0a5; color: #8a3d05; border-radius: var(--r-md); padding: 14px 18px; width: 100%; max-width: 480px; }
+.release svg { flex-shrink: 0; }
+.release strong { display: block; font-size: var(--fs-md); }
+.release span { font-size: var(--fs-sm); opacity: 0.85; }
+.release-done { background: var(--slot-available-bg); border-color: #b9e5c8; color: #11602e; }
+.receipt-head { display: flex; justify-content: space-between; align-items: center; gap: var(--s-3); padding-bottom: var(--s-4); border-bottom: 2px solid var(--ink-900); margin-bottom: var(--s-2); }
+.receipt-head strong { display: block; font-family: var(--font-display); font-size: var(--fs-lg); }
+.receipt-head span:not(.badge) { color: var(--muted); font-size: var(--fs-sm); }
+.receipt-total { display: flex; justify-content: space-between; align-items: center; margin-top: var(--s-3); padding: var(--s-4) var(--s-5); background: var(--teal-50); border: 1px solid var(--teal-100); border-radius: var(--r-md); }
+.receipt-total strong { font-family: var(--font-display); font-size: var(--fs-xl); color: var(--teal-700); }
+@media (max-width: 900px) { .success { grid-template-columns: 1fr; } }

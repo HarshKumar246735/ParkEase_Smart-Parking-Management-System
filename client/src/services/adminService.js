@@ -1,0 +1,23 @@
+import api, { unwrap } from './api.js';
+export const adminService = {
+  floors: () => unwrap(api.get('/admin/floors')),
+  createFloor: (b) => unwrap(api.post('/admin/floors', b)),
+  updateFloor: (id, b) => unwrap(api.put(`/admin/floors/${id}`, b)),
+  zones: (params) => unwrap(api.get('/admin/zones', { params })),
+  createZone: (b) => unwrap(api.post('/admin/zones', b)),
+  updateZone: (id, b) => unwrap(api.put(`/admin/zones/${id}`, b)),
+  slots: (params) => unwrap(api.get('/admin/slots', { params })),
+  createSlots: (b) => unwrap(api.post('/admin/slots', b)),
+  updateSlot: (id, b) => unwrap(api.put(`/admin/slots/${id}`, b)),
+  setMaintenance: (id) => unwrap(api.post(`/admin/slots/${id}/maintenance`)),
+  restoreSlot: (id) => unwrap(api.post(`/admin/slots/${id}/restore`)),
+  rates: () => unwrap(api.get('/admin/rates')),
+  updateRate: (type, b) => unwrap(api.put(`/admin/rates/${type}`, b)),
+  updateSettings: (b) => unwrap(api.put('/admin/settings', b)),
+  reservations: (params) => unwrap(api.get('/admin/reservations', { params })),
+  sessions: (params) => unwrap(api.get('/admin/sessions', { params })),
+  payments: (params) => unwrap(api.get('/admin/payments', { params })),
+  users: (params) => unwrap(api.get('/admin/users', { params })),
+  userDetail: (id) => unwrap(api.get(`/admin/users/${id}`)),
+  reports: (params) => unwrap(api.get('/admin/reports', { params })),
+};

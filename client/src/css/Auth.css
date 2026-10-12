@@ -1,0 +1,16 @@
+.auth { min-height: 100vh; display: grid; grid-template-columns: minmax(340px, 5fr) 6fr; }
+.auth-side { background: var(--ink-950); color: #fff; padding: 36px 44px; display: flex; flex-direction: column; justify-content: space-between; position: relative; overflow: hidden; }
+.auth-pitch h2 { color: #fff; font-size: clamp(30px, 3.2vw, 44px); margin-bottom: 14px; }
+.auth-pitch p { color: var(--ink-200); max-width: 320px; }
+.auth-bays { display: grid; grid-template-columns: repeat(5, 1fr); gap: 10px; margin-top: 40px; max-width: 360px; }
+.auth-bays span { height: 64px; border: 2px solid rgba(255, 255, 255, 0.28); border-bottom: 0; border-radius: 4px 4px 0 0; background: rgba(45, 212, 191, 0.08); }
+.auth-bays .occ { background: rgba(229, 72, 77, 0.35); border-color: rgba(229, 72, 77, 0.8); }
+.auth-bays .res { background: rgba(47, 107, 255, 0.35); border-color: rgba(47, 107, 255, 0.85); }
+.auth-demo { color: var(--teal-400); font-size: var(--fs-sm); font-weight: 600; }
+.auth-main { display: grid; place-items: center; padding: 32px 20px; }
+.auth-card { width: min(440px, 100%); display: grid; gap: var(--s-2); }
+.auth-card h1 { font-size: var(--fs-2xl); }
+.auth-form { display: grid; gap: var(--s-4); margin-top: var(--s-5); }
+.show-pw { justify-self: start; margin-top: 4px; }
+.auth-foot { margin-top: var(--s-4); color: var(--muted); font-size: var(--fs-sm); }
+@media (max-width: 860px) { .auth { grid-template-columns: 1fr; } .auth-side { padding: 20px 22px; } .auth-pitch, .auth-demo { display: none; } }

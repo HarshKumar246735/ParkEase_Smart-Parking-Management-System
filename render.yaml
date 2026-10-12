@@ -1,0 +1,19 @@
+# Render Blueprint (optional). Create via Render Dashboard > New > Blueprint, or configure the same values manually.
+services:
+  - type: web
+    name: parkease-api
+    runtime: node
+    rootDir: server
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /api/health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: MONGO_URI
+        sync: false      # paste your MongoDB Atlas connection string in the Render dashboard
+      - key: JWT_SECRET
+        generateValue: true
+      - key: CLIENT_URL
+        sync: false      # your Vercel URL, e.g. https://parkease.vercel.app

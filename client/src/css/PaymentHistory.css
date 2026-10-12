@@ -1,0 +1,3 @@
+/* Payment history reuses the shared table styles; only spacing tweaks live here. */
+.table .btn-sm svg { flex-shrink: 0; }
+@media (max-width: 720px) { .table.stack td .btn { margin-left: auto; } }

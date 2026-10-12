@@ -1,0 +1,10 @@
+.footer { background: var(--ink-950); color: var(--ink-300); padding: 64px 0 28px; }
+.footer-grid { display: grid; grid-template-columns: 1.6fr 1fr 1fr 1fr; gap: 40px; }
+.footer-about p { margin-top: 14px; max-width: 320px; font-size: 14px; }
+.footer h4 { color: #fff; font-size: 14px; margin-bottom: 14px; }
+.footer-grid > div a { display: block; color: var(--ink-300); font-size: 14px; padding: 5px 0; text-decoration: none; }
+.footer-grid > div a:hover { color: #fff; }
+.footer-legal { margin-top: 44px; padding-top: 22px; border-top: 1px solid rgba(255, 255, 255, 0.1); display: grid; gap: 8px; font-size: 13px; }
+.footer-legal b { color: #fff; }
+.footer-demo { color: var(--teal-400); font-weight: 600; }
+@media (max-width: 860px) { .footer-grid { grid-template-columns: 1fr 1fr; } .footer-about { grid-column: span 2; } }

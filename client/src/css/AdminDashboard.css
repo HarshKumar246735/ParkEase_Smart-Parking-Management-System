@@ -1,0 +1,11 @@
+.kpi-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(170px, 1fr)); gap: var(--s-4); margin-bottom: var(--s-5); }
+.kpi { background: var(--surface); border: 1px solid var(--line); border-radius: var(--r-lg); padding: var(--s-4); display: grid; gap: 6px; border-top: 3px solid var(--c, var(--ink-700)); }
+.kpi strong { font-family: var(--font-display); font-size: var(--fs-2xl); line-height: 1.1; }
+.kpi-label { color: var(--muted); font-size: var(--fs-sm); }
+.kpi-icon { width: 34px; height: 34px; border-radius: 10px; display: grid; place-items: center; background: color-mix(in srgb, var(--c, var(--ink-700)) 12%, transparent); color: var(--c, var(--ink-700)); }
+.kpi-navy { --c: var(--ink-800); } .kpi-green { --c: var(--slot-available); } .kpi-blue { --c: var(--slot-reserved); } .kpi-red { --c: var(--slot-occupied); }
+.kpi-orange { --c: var(--slot-release); } .kpi-gray { --c: var(--slot-maintenance); } .kpi-teal { --c: var(--teal-600); }
+.chart-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: var(--s-5); }
+.chart-card { min-width: 0; }
+.chart-card .card-head { margin-bottom: var(--s-3); }
+@media (max-width: 1000px) { .chart-grid { grid-template-columns: 1fr; } }

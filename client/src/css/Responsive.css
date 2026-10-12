@@ -1,0 +1,20 @@
+/* Global responsive adjustments, loaded last so it can override page styles. */
+@media (max-width: 900px) {
+  .form-grid { grid-template-columns: 1fr; }
+  .form-grid .span-2 { grid-column: auto; }
+}
+@media (max-width: 720px) {
+  .container { width: calc(100% - 28px); }
+  .page-header h1 { font-size: var(--fs-xl); }
+  .card { padding: var(--s-4); }
+  .modal-backdrop { align-items: end; padding: 0; }
+  .modal { border-bottom-left-radius: 0; border-bottom-right-radius: 0; width: 100%; }
+  /* tables collapse into stacked cards using data-label */
+  .table.stack thead { display: none; }
+  .table.stack, .table.stack tbody, .table.stack tr, .table.stack td { display: block; width: 100%; }
+  .table.stack tr { padding: 10px 14px; border-bottom: 1px solid var(--line); }
+  .table.stack tbody tr:last-child { border-bottom: 0; }
+  .table.stack td { border: 0; padding: 6px 0; display: flex; justify-content: space-between; gap: 16px; text-align: right; }
+  .table.stack td::before { content: attr(data-label); color: var(--muted); font-size: var(--fs-xs); font-weight: 600; text-align: left; }
+  .table.stack td.right { text-align: right; }
+}
