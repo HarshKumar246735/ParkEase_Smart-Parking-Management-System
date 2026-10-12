@@ -1,4 +1,5 @@
-# ParkEase - Smart Mall Parking Management System
+# ParkEase - Smart Mall Parking Management System  
+LIVE DEMO - https://park-ease-smart-parking-management.vercel.app
 <img width="1905" height="903" alt="Screenshot 2026-10-12 140637" src="https://github.com/user-attachments/assets/d338f349-791a-4bd0-9be3-3a80c6bd430a" />
 
 TASK:
